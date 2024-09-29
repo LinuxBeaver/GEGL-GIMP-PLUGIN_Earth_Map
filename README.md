@@ -1,6 +1,8 @@
 # GEGL Earth Map
 
-A GIMP plugin to render a fictious planet map.
+A GIMP plugin to render a fictious planet map. Download here
+
+https://github.com/LinuxBeaver/GEGL-GIMP-PLUGIN_Earth_Map/releases
 
 ![image](https://github.com/user-attachments/assets/00e690b6-efc9-4b1c-804b-939602f7e2ba)
 
@@ -43,4 +45,8 @@ Then build the same way you would on Linux:
 
 meson setup --buildtype=release build
 ninja -C build
+
+## more previews
+
+![image](https://github.com/user-attachments/assets/fe5b06ce-cfce-46e3-9842-a33a3c501e49)
 
