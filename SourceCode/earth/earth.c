@@ -112,7 +112,7 @@ static void attach (GeglOperation *operation)
   state->output   = gegl_node_get_output_proxy (gegl, "output");
 
   state->noise = gegl_node_new_child (gegl, "operation", "gegl:simplex-noise", "iterations", 20,  NULL);
-/*ec's number is cmyk-c*/
+/*ecꞌs number is cmyk-c*/
   state->ec = gegl_node_new_child (gegl, "operation", "gegl:component-extract", "component", 10,  NULL);
 
   state->colors = gegl_node_new_child (gegl, "operation", "port:gradient-map", "color1", earth, "color2", water,  NULL); 

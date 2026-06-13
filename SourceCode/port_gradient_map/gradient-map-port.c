@@ -186,8 +186,8 @@ static void prepare (GeglOperation *operation)
       o->stop4,
       o->stop5
   };
-  const Babl *input_format = (o->srgb) ? babl_format ("Y'A float") : babl_format ("YA float");
-  const Babl *output_format = (o->srgb) ? babl_format ("R'G'B'A float") : babl_format ("RGBA float");
+  const Babl *input_format = (o->srgb) ? babl_format ("YꞌA float") : babl_format ("YA float");
+  const Babl *output_format = (o->srgb) ? babl_format ("RꞌGꞌBꞌA float") : babl_format ("RGBA float");
 
   gegl_operation_set_format (operation, "input", input_format);
   gegl_operation_set_format (operation, "output", output_format);
@@ -244,17 +244,17 @@ gegl_op_class_init (GeglOpClass *klass)
 {
   GeglOperationClass            *operation_class;
   GeglOperationPointFilterClass *point_filter_class;
-  gchar                         *composition = "<?xml version='1.0' encoding='UTF-8'?>"
+  gchar                         *composition = "<?xml version=ꞌ1.0ꞌ encoding=ꞌUTF-8ꞌ?>"
     "<gegl>"
-    "<node operation='gegl:gradient-map'>"
+    "<node operation=ꞌgegl:gradient-mapꞌ>"
     "  <params>"
-    "    <param name='color1'>#410404</param>"
-    "    <param name='color2'>#22FFFA</param>"
+    "    <param name=ꞌcolor1ꞌ>#410404</param>"
+    "    <param name=ꞌcolor2ꞌ>#22FFFA</param>"
     "  </params>"
     "</node>"
-    "<node operation='gegl:load'>"
+    "<node operation=ꞌgegl:loadꞌ>"
     "  <params>"
-    "    <param name='path'>standard-input.png</param>"
+    "    <param name=ꞌpathꞌ>standard-input.png</param>"
     "  </params>"
     "</node>"
     "</gegl>";
